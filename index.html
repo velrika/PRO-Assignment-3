@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./scripts/main.js" defer></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link
+      href="mapbox://styles/rikavel/cl4mx7wqp00a015ny45bcscp8"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/mystyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="grid-content">
+      <main>
+        <!-- Space for weather info -->
+        <div class="weather-box">
+          <img src="./assets/boxLeft.png" alt="" />
+        </div>
+
+        <!-- Button to show weather info onclick -->
+        <div class="weather-button">
+          <button class="button" type="button" id="showWeather">
+            Weather Info
+          </button>
+        </div>
+
+        <div id="weather" class="weather">
+          <br />
+          Weather in Florida
+        </div>
+
+        <!-- Space for Map interface -->
+        <div id="map" class="map-box"></div>
+      </main>
+    </div>
+  </body>
+</html>

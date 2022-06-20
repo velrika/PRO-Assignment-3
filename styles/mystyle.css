@@ -1,0 +1,110 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap");
+.customMarker {
+  background-image: url("/assets/spaceship.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  padding: 5px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #0e0d0d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+.grid-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1)[10];
+      grid-template-columns: repeat(10, 1);
+  margin: auto;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1)[10];
+      grid-template-columns: repeat(10, 1);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.weather-box {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  grid-row: 1/6;
+}
+
+.map-box {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 7;
+  grid-column: 5/12;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  grid-row: 1/6;
+  background-color: #ffffff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+  height: 700px;
+  width: 700px;
+}
+
+.weather {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  margin-bottom: 100px;
+  height: 178px;
+  width: 322px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.weather-button {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  margin-right: 55px;
+}
+
+.button {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 100px;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+/*# sourceMappingURL=mystyle.css.map */
